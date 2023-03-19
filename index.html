@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>FoodMama</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+  <nav>
+    <h1><span class="yellow">Food</span> ni Mama</h1>
+    <ul>
+      <li><a href="#">Food</a></li>
+      <li><a href="#">Drinks</a></li>
+    </ul>
+  </nav>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Fries -->
+      <div class="swiper-slide" >
+        <div class="image">
+          <img src="img/fries.png" alt="French Fries ni Mama">
+        </div>
+        <h1><span class="yellow">French Fries</span> ni Mama</h1>
+        <div class="payment" >
+          <h3>Price:</h3>
+          <h2 id="fries">₱ 29.00</h2>
+        </div>
+        <button class="btn1" alt="French Fries ni Mama">Buy This</button>
+      </div>
+      <!-- Burger -->
+      <div class="swiper-slide">
+        <div class="image">
+          <img src="img/burger.png" alt="Ham Burger">
+        </div>
+        <h1><span class="yellow">Ham Burger</span> ni Mama</h1>
+        <div class="payment" >
+          <h3>Price:</h3>
+          <h2 id="burger">₱ 39.00</h2>
+        </div>
+        <button class="btn2" alt="Ham Burger ni Mama">Buy This</button>
+      </div>
+<!-- pizza -->
+      <div class="swiper-slide">
+        <div class="image">
+          <img src="img/pizza.png" alt="Pizza ni Mama">
+        </div>
+        <h1><span class="yellow">Pizza</span> ni Mama</h1>
+        <div class="payment" >
+          <h3>Price:</h3>
+          <h2 id="pizza">₱ 89.00</h2>
+        </div>
+        <button class="btn3" alt="Pizza ni Mama">Buy This</button>
+      </div>
+<!-- Shrimp -->
+      <div class="swiper-slide">
+        <div class="image">
+          <img src="img/Baked-Salted-Shrimp.png" alt="Shrimp ni Mama">
+        </div>
+        <h1><span class="yellow">Shrimp</span> ni Mama</h1>
+        <div class="payment" >
+          <h3>Price:</h3>
+          <h2 id="shrimp">₱ 99.00</h2>
+        </div>
+        <button class="btn4" alt="Shrimp ni Mama">Buy This</button>
+      </div>
+<!-- Spaghetti -->
+      <div class="swiper-slide">
+        <div class="image">
+          <img src="img/Spaghetti.png" alt="Spaghetti ni Mama">
+        </div>
+        <h1><span class="yellow">Spaghetti</span> ni Mama</h1>
+        <div class="payment" >
+          <h3>Price:</h3>
+          <h2 id="spaghetti">₱ 49.00</h2>
+        </div>
+        <button class="btn5" alt="Spaghetti ni Mama">Buy This</button>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="none" id="payment-method">
+    <div class="flex">
+      <button class="close">X</button>
+      <h3>CONFIRM YOUR ORDER PLEASE:</h3>
+      <h2 class="item"></h2>
+    </div>
+    <div class="flex">
+      <h3>Cost:</h3>
+      <h2  class="cost"></h2>
+    </div>
+    <button>YES, I CONFIRM</button>
+  </div>
+
+
+  <!-- <script src="script.js"></script> -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      direction: "horizontal",
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  
+</body>
+</html>
